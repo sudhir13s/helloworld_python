@@ -4,5 +4,5 @@ import pytest
 
 def test_hello_world():
     city = "Chicago"
-    assert "Temperature" in hello_world.hello_world(city) == True
+    assert "Temperature" in hello_world.hello_world(city)
 
