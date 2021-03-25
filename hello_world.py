@@ -33,8 +33,7 @@ def hello_world(city_name):
     # city is not found
     msg = "City Not Found"
 
-    if x["cod"] != "404":
-
+    if response.status_code in [200, 201]:
         # store the value of "main"
         # key in variable y
         y = x["main"]
