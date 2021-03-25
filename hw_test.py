@@ -1,4 +1,6 @@
 import hw
+import pytest
 
-if __name__ == '__main__':
+
+def test_hello_world():
     assert hw.hello_world() == "OK"
