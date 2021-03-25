@@ -32,7 +32,7 @@ def hello_world(city_name):
     # "404", means city is found otherwise,
     # city is not found
     msg = "City Not Found"
-
+    print("status code: ", response.status_code)
     if response.status_code in [200, 201]:
         # store the value of "main"
         # key in variable y
