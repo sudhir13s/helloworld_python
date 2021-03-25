@@ -1,7 +1,12 @@
+import os
+
 
 def hello_world():
-    print("hello world!")
-    return "hello world!"
+    api_key = os.environ.get("SECRET_KEY")
+    if api_key:
+        print("hello world!")
+        return "OK"
+    return "Error"
 
 
 if __name__ == "__main__":
